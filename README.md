@@ -7,7 +7,9 @@ This project aims to predict the concentration of vomitoxin (DON) in corn sample
 Dataset:
 
 The dataset contains 448 spectral reflectance values representing different wavelengths.
+
 The target variable is vomitoxin_ppb (DON concentration).
+
 Missing values were handled using median imputation.
 
 How to Run the Project:
@@ -23,28 +25,39 @@ View Results: Evaluation metrics and visualizations will be displayed in the not
 Results
 
 After training the model with the best hyperparameters, the following results were achieved:
+
 Mean Absolute Error (MAE): 3847.11 ppb
+
 Root Mean Squared Error (RMSE): 11,410.97 ppb
+
 R² Score: 0.534
+
 These metrics suggest moderate prediction accuracy, with room for further improvements.
 
 Contents
 
 Mycotoxin_Prediction.ipynb: The complete notebook containing all steps from data preprocessing to model evaluation.
+
 Report.pdf: A brief report summarizing the project, including methodology, results, and conclusions.
 
 Future Improvements:
 
 Experiment with ensemble models like XGBoost or LightGBM.
+
 Perform additional feature engineering using domain knowledge.
+
 Implement more advanced hyperparameter tuning.
+
 Deploy the model using Flask or FastAPI.
 
 References:
 
 Scikit-Learn: For model training and evaluation.
+
 Optuna: For hyperparameter tuning.
+
 SHAP: For interpretability.
+
 Matplotlib & Seaborn: For data visualization.
 
 Contact:
