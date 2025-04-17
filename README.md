@@ -1,70 +1,62 @@
-Mycotoxin Prediction using Hyperspectral Imaging
+# 🌽 Mycotoxin Prediction using Hyperspectral Imaging
 
-Project Overview:
+This project focuses on predicting the concentration of **vomitoxin (DON)** in corn samples using **hyperspectral imaging data**. Using machine learning, we aim to forecast DON levels based on spectral reflectance across various wavelengths, providing a fast and scalable method for detecting contamination in agricultural products.
 
-This project aims to predict the concentration of vomitoxin (DON) in corn samples using hyperspectral imaging data. The objective is to build a machine learning model to predict DON levels based on spectral reflectance values.
+---
 
-Dataset:
+## 📂 Project Overview
 
-The dataset contains 448 spectral reflectance values representing different wavelengths.
+- 🎯 **Goal**: Predict DON levels in corn samples using spectral data
+- 📊 **Target Variable**: `vomitoxin_ppb` (parts per billion)
+- 🌈 **Features**: 448 spectral reflectance values (wavelengths)
+- 🧪 **Approach**: Machine learning with hyperparameter tuning
 
-The target variable is vomitoxin_ppb (DON concentration).
+---
 
-Missing values were handled using median imputation.
+## 🧬 Dataset
 
-How to Run the Project:
+- 🔢 **448 spectral features** representing wavelengths
+- 🧹 **Missing values** handled using **median imputation**
+- 📁 File name: `MLE-Assignment.csv`
 
-Open the Colab Notebook: Google Colab Notebook Link
+---
 
-Upload the Dataset: The dataset (MLE-Assignment.csv) needs to be uploaded when prompted.
+## 📈 Results
 
-Run All Cells: Select Runtime → Run all to execute the entire notebook.
+After training and tuning the model, the following metrics were achieved:
 
-View Results: Evaluation metrics and visualizations will be displayed in the notebook.
+- 🔹 **Mean Absolute Error (MAE)**: 3847.11 ppb  
+- 🔹 **Root Mean Squared Error (RMSE)**: 11,410.97 ppb  
+- 🔹 **R² Score**: 0.534  
 
-Results
+> 🧠 These results indicate **moderate prediction accuracy**, with potential for improvement through advanced techniques.
 
-After training the model with the best hyperparameters, the following results were achieved:
+---
 
-Mean Absolute Error (MAE): 3847.11 ppb
+## 📁 Project Structure
 
-Root Mean Squared Error (RMSE): 11,410.97 ppb
+| File                     | Description                                     |
+|--------------------------|-------------------------------------------------|
+| `Mycotoxin_Prediction.ipynb` | Full notebook from data loading to model evaluation |
+| `Report.pdf`             | Summary of methodology, results, and conclusions |
 
-R² Score: 0.534
+---
 
-These metrics suggest moderate prediction accuracy, with room for further improvements.
+## 🚀 Future Improvements
 
-Contents
+- 🔁 Try ensemble models like **XGBoost** or **LightGBM**
+- 🧪 Apply domain-specific **feature engineering**
+- 🧠 Use **Optuna** for more advanced hyperparameter tuning
+- 🌐 Deploy the model via **Flask** or **FastAPI**
 
-Mycotoxin_Prediction.ipynb: The complete notebook containing all steps from data preprocessing to model evaluation.
+---
 
-Report.pdf: A brief report summarizing the project, including methodology, results, and conclusions.
+## 🧰 Libraries & Tools
 
-Future Improvements:
+- [Scikit-Learn](https://scikit-learn.org/)
+- [Optuna](https://optuna.org/) – Hyperparameter Optimization
+- [SHAP](https://github.com/slundberg/shap) – Model Interpretability
+- [Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/) – Visualization
 
-Experiment with ensemble models like XGBoost or LightGBM.
 
-Perform additional feature engineering using domain knowledge.
-
-Implement more advanced hyperparameter tuning.
-
-Deploy the model using Flask or FastAPI.
-
-References:
-
-Scikit-Learn: For model training and evaluation.
-
-Optuna: For hyperparameter tuning.
-
-SHAP: For interpretability.
-
-Matplotlib & Seaborn: For data visualization.
-
-Contact:
-
-If you have any questions, feel free to reach out at:
-
-GitHub: kattabhavana9
-
-Email: 22211a6757@bvrit.ac.in
 
